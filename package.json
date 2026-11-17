@@ -1,0 +1,12 @@
+{
+  "name": "embroidery-studio",
+  "version": "1.0.0",
+  "description": "浏览器端电脑绣花打版与仿真系统",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node test/node-smoke.mjs",
+    "test:e2e": "node test/e2e.mjs"
+  },
+  "license": "MIT"
+}
