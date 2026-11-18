@@ -1,0 +1,43 @@
+'use strict';
+/* Madeira 涤丝绣线色卡（近似色值，打版配色用） */
+const MADEIRA = [
+  { code: '1001', name: '漂白 White', hex: '#FFFFFF' },
+  { code: '1002', name: '本白 Snow White', hex: '#F5F2EA' },
+  { code: '1003', name: '米白 Ecru', hex: '#EFE3C8' },
+  { code: '1004', name: '浅灰 Silver', hex: '#C9CCD1' },
+  { code: '1005', name: '中灰 Steel', hex: '#8A8F98' },
+  { code: '1006', name: '深灰 Charcoal', hex: '#4A4D52' },
+  { code: '1007', name: '黑 Black', hex: '#1B1B1E' },
+  { code: '1010', name: '奶黄 Cream', hex: '#F7E9B8' },
+  { code: '1012', name: '柠檬黄 Lemon', hex: '#F9E04B' },
+  { code: '1014', name: '金黄 Gold', hex: '#F2B705' },
+  { code: '1016', name: '橙黄 Orange', hex: '#F08A00' },
+  { code: '1018', name: '橘红 Tangerine', hex: '#E85D04' },
+  { code: '1021', name: '浅粉 Baby Pink', hex: '#F9C6D3' },
+  { code: '1023', name: '粉 Pink', hex: '#F28BB1' },
+  { code: '1025', name: '玫红 Fuchsia', hex: '#D6336C' },
+  { code: '1027', name: '红 Red', hex: '#C8102E' },
+  { code: '1029', name: '深红 Burgundy', hex: '#7A1E2B' },
+  { code: '1031', name: '浅紫 Lilac', hex: '#C9A8D8' },
+  { code: '1033', name: '紫 Purple', hex: '#7B4B94' },
+  { code: '1035', name: '深紫 Violet', hex: '#4A2D6B' },
+  { code: '1037', name: '浅蓝 Sky', hex: '#A8CCE8' },
+  { code: '1039', name: '湖蓝 Turquoise', hex: '#3FA8C9' },
+  { code: '1041', name: '宝蓝 Royal', hex: '#1D4E9E' },
+  { code: '1043', name: '藏青 Navy', hex: '#1E2A4A' },
+  { code: '1045', name: '浅绿 Mint', hex: '#B8E0C8' },
+  { code: '1047', name: '草绿 Grass', hex: '#6FBF44' },
+  { code: '1049', name: '绿 Green', hex: '#1E7A3C' },
+  { code: '1051', name: '墨绿 Forest', hex: '#14452F' },
+  { code: '1053', name: '浅棕 Tan', hex: '#C9A06C' },
+  { code: '1055', name: '棕 Brown', hex: '#8A5A2B' },
+  { code: '1057', name: '深棕 Chocolate', hex: '#4E3018' },
+  { code: '1059', name: '肤色 Flesh', hex: '#F0C8A0' },
+  { code: '1061', name: '金 Metallic Gold', hex: '#C9A227' },
+  { code: '1063', name: '银 Metallic Silver', hex: '#B8BCC2' },
+  { code: '1065', name: '荧光黄 Neon Yellow', hex: '#E8FF47' },
+  { code: '1067', name: '荧光粉 Neon Pink', hex: '#FF5CB8' },
+];
+function threadByCode(code) {
+  return MADEIRA.find(t => t.code === code) || { code: code || '----', name: '自定义', hex: '#888888' };
+}
